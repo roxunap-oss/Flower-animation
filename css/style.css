@@ -14,12 +14,16 @@ body{
     overflow: hidden;
 }
 .greetings {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 900;
     opacity: 0;
     animation: appearText 2s forwards;
-    animation-delay: 5s;
-}
+    animation-delay: 1s;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 45%;
+    left: 0;
 
 }
 .greetings > span{
@@ -50,12 +54,16 @@ body{
 
 .description {
     font-size: 1.5rem;
-    margin-bottom: 20px;
     color: #fbff00;
     opacity: 0;
     animation: appearText 2s forwards;
     animation-delay: 6s;
-}
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30%;
+    left: 0;
+    margin: 0;
 
 }
 
