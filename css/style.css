@@ -13,9 +13,14 @@ body{
     background-color: black;
     overflow: hidden;
 }
-.greetings{
+.greetings {
     font-size: 6rem;
     font-weight: 900;
+    opacity: 0;
+    animation: appearText 2s forwards;
+    animation-delay: 5s;
+}
+
 }
 .greetings > span{
     animation: glow 2.5s ease-in-out infinite;
@@ -43,9 +48,15 @@ body{
     animation-delay: .8s;
 }
 
-.description{
+.description {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: #fbff00;
+    opacity: 0;
+    animation: appearText 2s forwards;
+    animation-delay: 6s;
+}
+
 }
 
 .button a{
@@ -98,4 +109,7 @@ body{
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
   
-  
+  @keyframes appearText {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
